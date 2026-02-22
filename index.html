@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <!-- Minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- minified CSS file -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="asseste/images/LOGO.png" alt=""></a>
+                <button class="demo-2" type="submit">Contact Us</button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-list">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Technologies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                    </ul>
+                    <div class="contact" id="nav-demo">
+                        <div class="tel">
+                        </div>
+                        <!-- <button class="demo" type="submit">Contact Us</button> -->
+                        <!-- Button trigger modal -->
+                        <button type="button" class="demo" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Contact Us
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                            tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <!-- <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1> -->
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                            
+                                    </div>
+                                    <div class="modal-body">
+                                        <section id="contact" class="py-5">
+                                            <div class="container">
+                                                <h2 class="text-center mb-4 text-dark">Get in Touch</h2>
+                                                <form id="contactForm" class="needs-validation" novalidate>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <label for="username" class="form-label">Username *</label>
+                                                            <input type="text" class="form-control" id="username"
+                                                                required>
+                                                            <div class="invalid-feedback">Please enter your username.
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="password" class="form-label">Password *</label>
+                                                            <input type="password" class="form-control" id="password"
+                                                                required>
+                                                            <div class="invalid-feedback">Please enter your password.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <div class="col-md-6">
+                                                            <label for="name" class="form-label">Name *</label>
+                                                            <input type="text" class="form-control" id="name" required>
+                                                            <div class="invalid-feedback">Please enter your name.</div>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label for="email" class="form-label">Email *</label>
+                                                            <input type="email" class="form-control" id="email"
+                                                                required>
+                                                            <div class="invalid-feedback">Please enter a valid email
+                                                                address.</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="subject" class="form-label">Subject *</label>
+                                                        <input type="text" class="form-control" id="subject" required>
+                                                        <div class="invalid-feedback">Subject is required.</div>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="message" class="form-label">Message *</label>
+                                                        <textarea class="form-control" id="message" rows="4"
+                                                            required></textarea>
+                                                        <div class="invalid-feedback">Message can't be empty.</div>
+                                                    </div>
+                                                    <div class="text-center">
+                                                        <button class="btn btn-success px-4 py-2" type="submit">Send
+                                                            Message</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </section>
+                                    </div>
+                                    <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Understood</button>
+        </div> -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="headbanner">
+
+        <div class="row main_row align-items-center" id="headcontent">
+            <div class="col-lg-7 p-0 headcontent_left">
+                <h1>
+                    Build Smarter with <span> Custom AI Solutions</span>
+
+                </h1>
+                <h4 class="mt-4 my-5">Helping startups and enterprises unlock the power of AI — from concept to
+                    deployment. Let’s design intelligent systems that scale with your goals.</h4>
+
+                <div class="mb-3">
+                    <a href="#" class="gr_btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Lets Talk AI
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-5 p-0  headcontent_right">
+                <div class="headcontent_image">
+                    <img src="asseste/images/Illustration.png" class="img-fluid w-100" alt="">
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <section class="client-section" id="clientSection">
+        <h2 class="title">Our Clients</h2>
+        <p class="subtitle">We’ve built custom AI systems with partners across industries — from early-stage startups to
+            enterprise teams.</p>
+
+        <div id="clientCarousel" class="owl-carousel owl-theme client-carousel">
+            <div class="client-item"><img src="asseste/images/Logo (1).png" alt="Client 1"></div>
+            <div class="client-item"><img src="asseste/images/Logo (2).png" alt="Client 2"></div>
+            <div class="client-item"><img src="asseste/images/Logo (3).png" alt="Client 3"></div>
+            <div class="client-item"><img src="asseste/images/Logo (4).png" alt="Client 4"></div>
+            <div class="client-item"><img src="asseste/images/Logo (5).png" alt="Client 5"></div>
+            <div class="client-item"><img src="asseste/images/Logo (6).png" alt="Client 6"></div>
+            <div class="client-item"><img src="asseste/images/Logo (7).png" alt="Client 7"></div>
+        </div>
+    </section>
+    <section class="offer">
+        <div class="row main_row">
+            <div class="section-title">
+                <h2>What we offer</h2>
+                <p>Tailored AI Solutions for Forward-Thinking Teams</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="carousel-container">
+                <div id="first-carousel" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="icon">
+                                <img src="asseste/images/robo.png" alt="">
+                            </div>
+                            <h3>AI Strategy & Consulting</h3>
+                            <p>Unlock the potential of AI with expert guidance. Identify high-impact opportunities and
+                                design ethical AI systems tailored to your goals.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="icon">
+                                <img src="asseste/images/stack.png" alt="">
+                            </div>
+                            <h3>Full Stack Development</h3>
+                            <p>As a leading full stack development company, we provide technology solutions to transform
+                                digital vision into scalable applications</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="icon">
+                                <img src="asseste/images/heal.png" alt="">
+                            </div>
+                            <h3>Healthcare Software Development</h3>
+                            <p class="ui-title">With a focus on seamless operations in medical practice, and improving
+                                healthcare outcomes,we provide custom healthcare software development services..</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-card">
+                            <div class="icon">
+                                <img src="asseste/images/pen.png" alt="">
+                            </div>
+                            <h3>UI/UX Design</h3>
+                            <p> Improve your user experience with our skilled UI UX design experts and create user
+                                friendly interfaces to enhance your digital presence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom navigation buttons -->
+                <button id="custom-prev" class="custom-nav-btn custom-prev-btn">
+                    <img src="asseste/images/left.png" alt="">
+                </button>
+                <button id="custom-next" class="custom-nav-btn custom-next-btn">
+                    <img src="asseste/images/weui_arrow-filled.png" alt="">
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <!-- our Process section start here -->
+
+    <section class="process-container">
+
+        <div class="row main_row mb-5">
+            <div class="col-md-12 text-center">
+                <h1 class="main-title">Our Process: Simple, Structured, Scalable</h1>
+
+            </div>
+        </div>
+
+        <div class="process-flow ">
+            <!-- Step 1 -->
+            <div class="process-step" data-step="1">
+                <div class="row main_row">
+                    <div class="col-md-2 col-sm-12 text-md-end text-center mb-3 mb-md-0">
+                        <div class="step-number">1</div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 d-md-flex">
+                        <h3 class="step-title text-sm-center">Discover</h3>
+                        <p class="col-md-6 step-description">We learn about your business, users, and the problems you
+                            want to solve.</p>
+                        <img src="asseste/images/Arrow 1.png" class="d-md-flex d-none" alt="">
+                        <div class="vec">
+                            <img src="asseste/images/Vector 7.png" alt="">
+                            <img src="asseste/images/Vector 8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-4"></div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="process-step" data-step="2">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 col-sm-12 text-md-end text-center mb-3 mb-md-0">
+                        <div class="step-number">2</div>
+                    </div>
+                    <div class="col-md-10 col-sm-12 d-md-flex">
+                        <h3 class="step-title text-sm-center">Design</h3>
+                        <p class="col-md-4 step-description">We create a roadmap and select the right tools and models
+                            for the job.</p>
+                        <img src="asseste/images/Arrow 1.png" class="d-md-flex d-none" alt="">
+                        <div class="vec">
+                            <img src="asseste/images/Vector 7.png" alt="">
+                            <img src="asseste/images/Vector 8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="process-step" data-step="3">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-4 col-sm-12 text-md-end text-center mb-3 mb-md-0">
+                        <div class="step-number">3</div>
+                    </div>
+                    <div class="col-md-10 col-sm-12 d-md-flex">
+                        <h3 class="step-title text-sm-center">Develop</h3>
+                        <p class="col-md-4 step-description">We build and train models that align with your data,
+                            domain, and goals.</p>
+                        <img src="asseste/images/Arrow 1.png" class="d-md-flex d-none" alt="">
+                        <div class="vec">
+                            <img src="asseste/images/Vector 7.png" alt="">
+                            <img src="asseste/images/Vector 8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="process-step" data-step="4">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-6 col-sm-12 text-md-end text-center mb-3 mb-md-0">
+                        <div class="step-number">4</div>
+                    </div>
+                    <div class="col-md-10 col-sm-12 d-md-flex">
+                        <h3 class="step-title text-sm-center">Deploy</h3>
+                        <p class="col-md-5 step-description">We integrate AI into your workflows — seamlessly and
+                            securely.</p>
+                        <img src="asseste/images/Arrow 1.png" class="d-md-flex d-none" alt="">
+                        <div class="vec">
+                            <img src="asseste/images/Vector 7.png" alt="">
+                            <img src="asseste/images/Vector 8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="process-step" data-step="5">
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-8 col-sm-12 text-md-end text-center mb-3 mb-md-0">
+                        <div class="step-number">5</div>
+                    </div>
+                    <div class="col-md-10 col-sm-12 d-md-flex">
+                        <h3 class="step-title">Support</h3>
+                        <p class="col-md-6 step-description">We track performance, retrain when needed, and keep your AI
+                            sharp.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section> <!-- our Process section end here -->
+
+
+    <section class="ai-section">
+
+        <div class="row gx-5 align-items-center main_row">
+            <div class="col-md-6 mb-4 mb-md-0">
+                <h2 class="ai-heading">
+                    Not sure where to <br><span class="ai-highlight">Start with AI?</span>
+                </h2>
+                <p class="ai-text">
+                    You're not alone. Whether you're exploring automation, improving customer experience, or making
+                    sense of messy data, we help you cut through the <br> noise.<br>
+                    Let’s turn your curiosity into a clear plan.
+                </p>
+            </div>
+            <div class="col-md-6  text-md-end text-center">
+                <a href="#" class="btn btn-green" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book a free
+                    consultation</a>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="section-bg text-center">
+        <div class="row main_row">
+            <h2 class="section-title">Industries We Serve</h2>
+            <p class="section-subtitle">
+                Our solutions are trusted across healthcare, logistics, education, retail, and more.
+                We tailor every model to the realities of your industry.
+            </p>
+
+            <div class="scroll-container px-3">
+                <!-- 8 scrollable industry items -->
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/store.png" alt=""></div>
+                    <div class="industry-text">Retail</div>
+                </div>
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/health.png" alt=""></div>
+                    <div class="industry-text">Healthcare</div>
+                </div>
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/edu.png" alt=""></div>
+                    <div class="industry-text">Education</div>
+                </div>
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/truck.png" alt=""></div>
+                    <div class="industry-text">Logistics</div>
+                </div>
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/store.png" alt=""></div>
+                    <div class="industry-text">Retail</div>
+                </div>
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/health.png" alt=""></div>
+                    <div class="industry-text">Healthcare</div>
+                </div>
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/edu.png" alt=""></div>
+                    <div class="industry-text">Education</div>
+                </div>
+                <div class="scroll-item">
+                    <div class="industry-icon"><img src="asseste/images/truck.png" alt=""></div>
+                    <div class="industry-text">Logistics</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- second card slide section start here -->
+    <section class="testimonials-section">
+
+        <div class="row main_row mb-4">
+            <div class="col-12 text-center">
+                <h2 class="owl-title">What our Customers say</h2>
+            </div>
+        </div>
+
+        <div class="row main_row">
+            <div class="col-12">
+                <div class="owl-carousel testimonial-carousel owl-theme">
+                    <!-- Testimonial 1 -->
+                    <div class="item testimonial-card">
+                        <div class="testimonial-content">
+                            <h4 class="testimonial-quote">"They helped us reduce manual processing time by over 40%."
+                            </h4>
+                            <p class="testimonial-author">Ritika Mehra, Operations Head, ABCXYI</p>
+                            <div class="testimonial-details text-center">
+                                <p>We approached them with a vague idea for automating customer support. They not only
+                                    built a working NLP model but integrated it into our system within weeks. Their team
+                                    made complex AI feel simple.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="item testimonial-card">
+                        <div class="testimonial-content">
+                            <h4 class="testimonial-quote">"The AI pipeline they built now runs our core analytics."</h4>
+                            <p class="testimonial-author">Jason Kim, CTO, PQRST Logistic</p>
+                            <div class="testimonial-details text-center">
+                                <p>We needed help sorting through massive amounts of logistics data. Perimetric built a
+                                    model that identifies bottlenecks in real time — it's completely transformed how we
+                                    operate.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="item testimonial-card">
+                        <div class="testimonial-content">
+                            <h4 class="testimonial-quote">"They didn't just deliver — they educated our team along the
+                                way."</h4>
+                            <p class="testimonial-author">Dr. Ananya Rao, Co-founder, ABTT</p>
+                            <div class="testimonial-details text-center">
+                                <p>We approached them with a vague idea for automating customer support. They not only
+                                    built a working NLP model but integrated it into our system within weeks. Their team
+                                    made complex AI feel simple.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional testimonials for demonstration -->
+                    <div class="item testimonial-card">
+                        <div class="testimonial-content">
+                            <h4 class="testimonial-quote">"Our decision-making process is now 5x faster with their
+                                analytics."</h4>
+                            <p class="testimonial-author">Sarah Johnson, CEO, TechSolutions</p>
+                            <div class="testimonial-details text-center">
+                                <p>The AI-powered dashboard they created helps us identify market trends before our
+                                    competitors. What used to take weeks of analysis now happens in real-time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item testimonial-card">
+                        <div class="testimonial-content">
+                            <h4 class="testimonial-quote">"Our customer satisfaction scores increased by 35%."</h4>
+                            <p class="testimonial-author">Michael Chen, Customer Service Director, GlobalRetail</p>
+                            <div class="testimonial-details text-center">
+                                <p>The AI chatbot handles 80% of routine inquiries, freeing our team to focus on complex
+                                    customer needs. Response times dropped from hours to seconds.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Custom Navigation - Positioned on sides like in the image -->
+        <button class="custom-prev-btn"><img src="asseste/images/left.png" alt=""></button>
+        <button class="custom-next-btn"><img src="asseste/images/weui_arrow-filled.png" alt=""></button>
+    </section>
+
+    <!-- jQuery -->
+
+    <!-- Bootstrap JS Bundle with Popper -->
+
+    <!-- Owl Carousel JS -->
+
+    <!-- second card slide section end here -->
+
+
+
+
+    <section class="contact-section">
+
+        <div class="row main_row">
+            <!-- Text Column -->
+            <div class="col-md-6 mb-4">
+                <h2 class="contact-heading">Get in <span>Touch</span></h2>
+                <p class="contact-title">Whether you're testing the waters with AI or already knee-deep in data,
+                    we're here to simplify the
+                    journey. Share your challenges, and we'll help you shape a solution — no jargon, no pressure.
+                </p>
+            </div>
+
+            <!-- Form Column -->
+            <div class="col-md-6 ">
+                <form class="form-container">
+                    <div class="mb-3">
+                        <input type="email" class="form-contact" placeholder="Enter email address" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-contact" rows="4"
+                            placeholder="Tell us what you're exploring or need help with" required></textarea>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn-post">Send</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer starts here -->
+    <footer>
+
+        <div class="row main_row">
+            <div class="col-md-3  text-center mb-4">
+                <div class="social-icons mb-3">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-dribbble"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-md-2 text-start mb-4">
+                <h6 class="list-head">Company</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 text-start mb-4">
+                <h6 class="list-head">Support</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">Help center</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Legal</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Status</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-3 mb-4">
+                <h6 class="list-head">Stay up to date</h6>
+                <form class="d-flex enquiry">
+                    <input type="email" class="form-arrow form-control me-2 text-light"
+                        placeholder="Your email address">
+                    <button type="submit" class="btn-arrow">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+    </footer>
+    <!-- footer starts here -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+
+        // image slider js start here
+        $(document).ready(function () {
+            var owl = $('#first-carousel');
+            owl.owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: false,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: { items: 1 },
+                    576: { items: 2 },
+                    768: { items: 3 },
+                    992: { items: 4 }
+                }
+            });
+
+            $('#custom-prev').click(function () {
+                owl.trigger('prev.owl.carousel');
+            });
+
+            $('#custom-next').click(function () {
+                owl.trigger('next.owl.carousel');
+            });
+        });
+
+        // image slider js end here
+
+
+
+
+
+        /* second testimonial slider js start here */
+        $(document).ready(function () {
+            // Initialize Owl Carousel
+            var testimonialCarousel = $('.testimonial-carousel');
+
+            testimonialCarousel.owlCarousel({
+                loop: true,
+                margin: 20,
+                nav: false,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    576: {
+                        items: 1
+                    },
+                    768: {
+                        items: 2
+                    },
+                    992: {
+                        items: 3
+                    }
+                }
+            });
+
+            // Custom Navigation
+            $('.custom-next-btn').click(function () {
+                testimonialCarousel.trigger('next.owl.carousel');
+            });
+
+            $('.custom-prev-btn').click(function () {
+                testimonialCarousel.trigger('prev.owl.carousel');
+            });
+
+            // Add animation effects when scrolling to the testimonials section
+            $(window).scroll(function () {
+                var testimonialSection = $('.testimonials-section');
+
+                if (isInViewport(testimonialSection) && !testimonialSection.hasClass('animated')) {
+                    testimonialSection.addClass('animated');
+                    $('.testimonial-card').each(function (index) {
+                        $(this).delay(index * 200).animate({
+                            opacity: 1,
+                            top: 0
+                        }, 600);
+                    });
+                }
+            });
+
+            // Check if element is in viewport
+            function isInViewport(element) {
+                if (element.length === 0) {
+                    return false;
+                }
+
+                var elementTop = element.offset().top;
+                var elementBottom = elementTop + element.outerHeight();
+                var viewportTop = $(window).scrollTop();
+                var viewportBottom = viewportTop + $(window).height();
+
+                return elementBottom > viewportTop && elementTop < viewportBottom;
+            }
+
+            // Initially check for elements in viewport
+            if (isInViewport($('.testimonials-section'))) {
+                $('.testimonials-section').addClass('animated');
+            }
+        });
+
+        /* second testimonial slider js ends here */
+
+
+
+    </script>
+    <!-- first slider js starts here -->
+    <script>
+        (() => {
+            'use strict';
+            const form = document.querySelector('.needs-validation');
+            form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        })();
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#clientCarousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 2500,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 3
+                    },
+                    600: {
+                        items: 4
+                    },
+                    1000: {
+                        items: 7
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
